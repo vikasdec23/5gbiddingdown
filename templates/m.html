@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html! lng="en">
+<head>
+<meta charset="UTP-8">
+<title>BIDDINGDOWNATTACK</title>
+</head>
+<body bgcolor=#d4a3ae>
+<center>
+<h1>Predict Bidding Down Attack</h1><br>
+<h3> Enter the Network characteristics</h3><br>
+             <div class="row">
+<form action="{{url_for('predict')}}" method="post">
+    <p><input type="text" name="PING" placeholder="PING"></p>
+    <p><input type="text" name="JITTER" placeholder="JITTER"></p>
+    <p><input type="text" name="UL" placeholder="UL"></p>
+    <p><input type="text" name="DL" placeholder="DL"></p>
+    <p><input type="submit", value='predict'></p>
+    <br><h4 align="center"<b>{{pred}}</b></h4>
+    <br>  
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
